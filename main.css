@@ -67,6 +67,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 23px;
+    
 }
 
 .hour-1{ 
@@ -171,5 +172,15 @@ body{
     position: absolute;
     left: 99px;
     top: -65px;
+}
+@media screen and (min-width :400px) {
+    body{   
+        margin: 120px auto;
+
+    }
+    .clock-dial{
+        margin: auto;
+    }
+
 }
 
