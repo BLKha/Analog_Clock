@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --second-hand:brown;
+    --minute-hand:#fff;
+    --hour-hand:#fff;
+    --point-color:#fce920;
+    --text-color:#fce920;
+    --border-color:#fff;
+    --background:#1e1b1b;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+body{
+    text-align: center;
+    max-width: 100vh;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+.clock-dial{
+    width: 390px;
+    height: 390px;
+    border: 15px solid var(--border-color);
+    box-shadow: 0 0 50px #1beef9;
+    border-radius: 50%;
+    margin-top: 120px;
+    position: relative;
+}
+.clock{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 20px ;
+    top: 220px;
+    left: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#hours,#seconds,#minutes{
+    width: 30px;
+    color: #1ef0f7;
+}
+.point{
+    width: 30px;
+    height: 30px;
+    background-color: var(--point-color);
+    font-size: 26px;
+    position: absolute;
+    font-weight: bold;
+    top: 160px;
+    left: 160px;
+    border-radius: 50%;
+    z-index: 999;
+    /* display: none; */
+}
+.hour{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.hour-1{ 
+    transform: rotate(300deg) translate(150px) rotate(-300deg); 
+}
+
+.hour-2 { 
+    transform: rotate(330deg)  translate(150px) rotate(-330deg); }
+.hour-3 { 
+    transform: rotate(360deg)  translate(150px) rotate(-360deg); }
+.hour-4 { 
+    transform: rotate(30deg)   translate(150px) rotate(-30deg); }
+.hour-5  { 
+    transform: rotate(60deg)   translate(150px) rotate(-60deg); }
+.hour-6  { 
+    transform: rotate(90deg)   translate(150px) rotate(-90deg); }
+.hour-7  { 
+    transform: rotate(120deg)  translate(150px) rotate(-120deg); }
+.hour-8  { 
+    transform: rotate(150deg)  translate(150px) rotate(-150deg); }
+.hour-9  { 
+    transform: rotate(180deg)  translate(150px) rotate(-180deg); }
+.hour-10  { 
+    transform: rotate(210deg)  translate(150px) rotate(-210deg); }
+.hour-11  { 
+    transform: rotate(240deg)  translate(150px) rotate(-240deg); }
+.hour-12  { 
+    transform: rotate(270deg)  translate(150px) rotate(-270deg); }
+.minute-hand-wrapper{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    /* 40px = (dial width - minute-hand-wrapper width)/3 */
+    top: 40px;
+    left: 40px;
+    border-radius: 50%;
+}
+.minute-hand{
+    position: relative;
+}
+.minute-hand .hand{
+    width: 4px;
+    height:135px;
+    background-color: var(--minute-hand);
+    position: absolute;
+    left: 133px;
+}
+.minute-hand .arrow{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--minute-hand);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 128px;
+    top: -5px;
+}
+.hour-hand-wrapper{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* 40px = (dial width - minute-hand-wrapper width)/3 */
+    top: 75px;
+    left: 75px;
+    border-radius: 50%;
+}
+.hour-hand{
+    position: relative;
+}
+.hour-hand .hand{
+    width: 4px;
+    height:95px;
+    background-color: var(--hour-hand);
+    position: absolute;
+    left: 98px;
+}
+.hour-hand .arrow{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--hour-hand) ;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 92.5px;
+    top: -5px;
+}
+
+.second-hand-wrapper{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* 40px = (dial width - minute-hand-wrapper width)/3 */
+    top: 75px;
+    left: 75px;
+    border-radius: 50%;
+}
+.second-hand{
+    position: relative;
+}
+.second-hand .hand{
+    width: 2px;
+    height:200px;
+    background-color: var(--second-hand);
+    position: absolute;
+    left: 99px;
+    top: -65px;
+}
+
